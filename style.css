@@ -1,0 +1,74 @@
+#current-lab{
+    background-color: black;
+    color: white;
+}
+#current-task{
+    background-color: black;
+    color: white;
+}
+.lab-list{
+    margin: 1%;
+    border-style: solid;
+    border-radius: 15%;
+    border-color:black;
+    border-width: 1%;
+    font-style: bold;
+}
+.lab-list:link, .lab-list:visited {
+    background-color: #ffffff;
+    color:black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+  
+.lab-list:hover, .lab-list:active {
+    background-color: black;
+    color: white;
+}
+
+.task-list{
+    margin: 1%;
+    border-style: solid;
+    border-radius: 60%;
+    border-color:black;
+    border-width: 1%;
+    font-style: bold;
+}
+.task-list:link, .task-list:visited {
+    background-color: #ffffff;
+    color:black;
+    padding: 3.5% 4.5%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+.task-list:hover, .task-list:active {
+    background-color: black;
+    color: white;
+}
+
+.main-menu {
+    max-width: 100%;
+    height: auto;
+    overflow:hidden
+}
+.left-side{
+    float:left;
+    width:30%
+}
+.right-side{
+    float:right;
+    width: 70%
+}
+
+#info{
+    margin-right: 30%;
+    border-style: solid;
+    border-color:black;
+    border-width: 1%;
+    font-style: bold;
+    padding-right: 79%;
+}
