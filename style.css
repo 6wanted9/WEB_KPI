@@ -11,7 +11,7 @@
     border-style: solid;
     border-radius: 15%;
     border-color:black;
-    border-width: 1%;
+    border-width: thin;
     font-style: bold;
 }
 .lab-list:link, .lab-list:visited {
@@ -33,7 +33,7 @@
     border-style: solid;
     border-radius: 20%;
     border-color:black;
-    border-width: 1%;
+    border-width: thin;
     font-style: bold;
 }
 .task-list:link, .task-list:visited {
@@ -68,7 +68,7 @@
     margin-right: 30%;
     border-style: solid;
     border-color:black;
-    border-width: 1%;
+    border-width: thin;
     font-style: bold;
     padding: 1.5% 2.5%;
 }
