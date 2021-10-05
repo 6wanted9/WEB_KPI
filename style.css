@@ -2,7 +2,8 @@
   background-color: black;
   color: white;
 }
-#current-task {
+#current-task,
+#current-subtask {
   background-color: black;
   color: white;
 }
@@ -76,4 +77,8 @@
   font-style: bold;
   padding: 1.5% 2.5%;
   text-align: left;
+}
+
+.subtask {
+  margin-left: 10%;
 }
