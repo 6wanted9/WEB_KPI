@@ -40,7 +40,156 @@
                 </div>
                 <div class="right-side">
                     <div id="info">
-                        Розмітка сторінки за допомогою плаваючих блоків
+                        <b>Переглянути результат:</b> <a style="font-style: italic; text-decoration: none;" href="Katanov/task.html" target="_blank">TABLES</a> <br>
+                        <h2>HTML-код:</h2>
+                        <div>
+                            &lt!DOCTYPE html&gt
+                            <br>&lthtml&gt
+                            <br>    &lthead&gt
+                            <br>        &ltmeta charset="UTF8"&gt
+                            <br>        &lttitle&gtTABLES&lt/title&gt
+                            <br>        &ltlink rel="stylesheet" href="task.css"&gt
+                            <br>    &lt/head&gt
+                            <br>    &ltbody&gt
+                            <br>            &ltdiv&gt
+                            <br>                &lttable&gt
+                            <br>                    &lttr class="row1"&gt
+                            <br>                        &lttd id="td1_1"&gt
+                            <br>                            &lttable&gt&lttr&gt&lttd id="td_1_1_1"&gt&lt/td&gt&lt/tr&gt&lt/table&gt
+                            <br>                        &lt/td&gt
+                            <br>                        &lttd id="td1_2"&gt&lt/td&gt
+                            <br>                        &lttd id="td1_3"&gt&ltb&gt1&lt/b&gt&lt/td&gt
+                            <br>                    &lt/tr&gt
+                            <br>                    &lttr class="row2"&gt
+                            <br>                            &lttd id="td2_1"&gt&ltb&gt2&lt/b&gt&lt/td&gt
+                            <br>                            &lttd&gt
+                            <br>                                &lttable id="table_inside"&gt
+                            <br>                                    &lttr class="row_inside" id="first_row_inside"&gt
+                            <br>                                        &lttd id="td2_2"&gt&ltb&gt3&lt/b&gt&lt/td&gt
+                            <br>                                    &lt/tr&gt
+                            <br>                                    &lttr class="row_inside"&gt
+                            <br>                                        &lttd id="td2_2_2"&gt&lt/td&gt
+                            <br>                                    &lt/tr&gt
+                            <br>                                &lt/table&gt
+                            <br>                            &lt/td&gt
+                            <br>                            &lttd&gt&lttable&gt&lttr class="row2"&gt&lttd id="td2_3"&gt&ltb&gt4&lt/b&gt&lt/td&gt&lt/tr&gt&lt/table&gt&lt/td&gt
+                            <br>                    &lt/tr&gt
+                            <br>                    &lttr class="row3"&gt
+                            <br>                        &lttd colspan="3" id="td3"&gt&ltb&gt5&lt/b&gt&lt/td&gt
+                            <br>                    &lt/tr&gt
+                            <br>                &lt/table&gt
+                            <br>            &lt/div&gt
+                            <br>    &lt/body&gt
+                            <br>&lt/html&gt
+                        </div>
+                        <h2>CSS-код:</h2>
+                        <div>
+                            table {
+                                <br>  table-layout: fixed;
+                                <br>  border-collapse: collapse;
+                                <br>  background: white;
+                                <br>  border: 1px black solid;
+                                <br>}
+                                <br>td {
+                                <br>  padding: 50px;
+                                <br>}
+                                <br>.row1 {
+                                <br>  width: 100%;
+                                <br>  height: 10px;
+                                <br>}
+                                <br>.row2 {
+                                <br>  width: 100%;
+                                <br>  height: 600px;
+                                <br>}
+                                <br>.row3 {
+                                <br>  width: 100%;
+                                <br>  height: 100px;
+                                <br>}
+                                <br>
+                                <br>#td1_1 {
+                                <br>  background: yellow;
+                                <br>  column-width: 100em;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  padding: 20px;
+                                <br>}
+                                <br>#td_1_1_1 {
+                                <br>  background: white;
+                                <br>  column-width: 20em;
+                                <br>  border: black 1px solid;
+                                <br>  padding: 30px;
+                                <br>}
+                                <br>#td1_2 {
+                                <br>  background: yellow;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  column-width: 100em;
+                                <br>}
+                                <br>#td1_3 {
+                                <br>  background: yellow;
+                                <br>  column-width: 100em;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  text-align: right;
+                                <br>}
+                                <br>
+                                <br>#td2_1 {
+                                <br>  background: aqua;
+                                <br>  column-width: 80em;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  text-align: center;
+                                <br>}
+                                <br>#td2_2 {
+                                <br>  background: white;
+                                <br>  column-width: 80em;
+                                <br>  padding-left: 10px;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  text-align: center;
+                                <br>}
+                                <br>#td2_3 {
+                                <br>  background: aqua;
+                                <br>  column-width: 80em;
+                                <br>  padding-left: 10px;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  text-align: center;
+                                <br>}
+                                <br>#td3 {
+                                <br>  background: yellow;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  column-width: 300em;
+                                <br>}
+                                <br>
+                                <br>#td2_2_2 {
+                                <br>  background: palevioletred;
+                                <br>  border-top: 1px solid black;
+                                <br>  border-bottom: 1px solid black;
+                                <br>  border-left: 1px solid black;
+                                <br>  border-right: 1px solid black;
+                                <br>  column-width: 80em;
+                                <br>}
+                                <br>
+                                <br>.row_inside {
+                                <br>  width: 80em;
+                                <br>  height: 100px;
+                                <br>}
+                                <br>
+                                <br>#first_row_inside {
+                                <br>  height: 500px;
+                                <br>}
+                                <br>
+                        </div>
                     </div>
                 </div>
             </div>
