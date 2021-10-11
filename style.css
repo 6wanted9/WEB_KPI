@@ -1,6 +1,24 @@
+* {color:black}
+[atrsel="Селектор атрибута"] {color:red}
+a1{
+  color:black
+}
+b1{
+  background-color: black;
+}
+c1, d1{
+  color:green
+}
+
+a1 + b1{
+  color:green
+}
 #current-lab {
   background-color: black;
   color: white;
+}
+a1>b1{
+  color:purple
 }
 #current-task,
 #current-subtask {
