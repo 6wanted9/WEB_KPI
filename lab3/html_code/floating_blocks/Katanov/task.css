@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 #top {
-  width: 100%;
+  width: 99.9%;
   height: 10%;
   background-color: yellow;
   border: 1px black solid;
@@ -41,7 +41,7 @@ body {
 }
 
 #center {
-  width: 100%;
+  width: 99.9%;
   height: 800px;
   background-color: white;
   border: 1px black solid;
@@ -90,7 +90,7 @@ body {
 }
 
 #footer {
-  width: 100%;
+  width: 99.9%;
   height: 80px;
   background-color: yellow;
   border: 1px black solid;
