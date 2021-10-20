@@ -41,7 +41,50 @@
                 </div>
                 <div class="right-side">
                     <div id="info">
-                        Розмітка сторінки за допомогою плаваючих блоків
+                        <pre><code>
+                            &lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset="UTF8"&gt;
+        &lt;title&gt;TABLES&lt;/title&gt;
+        &lt;link rel="stylesheet" href="2.css"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+            &lt;div&gt;
+                &lt;table align="center"&gt; 
+                    &lt;tr class="row1"&gt;
+                        &lt;td colspan = 2 id="td1_1"&gt;
+                            &lt;table&gt;&lt;tr&gt;&lt;td id="td_1_1_1"&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+                        &lt;/td&gt;
+                        &lt;td id="td1_2"&gt;
+                            &lt;b&gt;1&lt;/b&gt;
+                        &lt;/td&gt;
+                        
+                    &lt;/tr&gt;
+                    &lt;tr class="row2"&gt;
+                            &lt;td id="td2_1"&gt;&lt;b&gt;2&lt;/b&gt;&lt;/td&gt;
+                            &lt;td colspan="2" id="td_inside"&gt;
+                                &lt;table id="table_inside"&gt;
+                                    &lt;tr class="row_inside" id="first_row_inside"&gt;
+                                        &lt;td colspan="2" id="td2_2"&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                    &lt;tr class="row_inside"&gt;
+                                        &lt;td id="td2_2_1"&gt;&lt;b&gt;3&lt;/b&gt;&lt;/td&gt;
+                                        &lt;td id="td2_2_2"&gt;&lt;b&gt;4&lt;/b&gt;&lt;/td&gt;
+                                    &lt;/tr&gt;
+                                &lt;/table&gt;
+                            &lt;/td&gt;
+                            
+                    &lt;/tr&gt;
+
+                    &lt;tr class="row3"&gt;
+                        &lt;td colspan="3" id="td3"&gt;&lt;b&gt;5&lt;/b&gt;&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+                        </code></pre>
                     </div>
                 </div>
             </div>
