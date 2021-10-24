@@ -1,0 +1,24 @@
+.edit-buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px;
+}
+.edit-button{
+    padding: 10px;
+}
+#input_area{
+    width: 80%;
+    margin: 30px;
+}
+#output_area{
+    width: 80%;
+    margin: 30px;
+    padding: 10px;
+    border: black solid 1px;
+}
+
+.pressed_button{
+    background-color: black;
+    color: white;
+}
