@@ -8,13 +8,21 @@
     </head>
     <body>
         <div class="edit-buttons">
-            <form id="edit">
-            <input class="edit-button" type="button" value="Напівжирність" id="bold">
-            <input class="edit-button" type="button" value="Нахил" id="incline">
-            <input class="edit-button" type="button" value="Підкреслювання" id="underline">
-            <input class="edit-button" type="button" value="Колір тексту">
-            <input class="edit-button" type="button" value="Регістр символів">
-            </form>
+                <input class="edit-button" type="button" value="Напівжирність" id="bold">
+                <input class="edit-button" type="button" value="Нахил" id="incline">
+                <input class="edit-button" type="button" value="Підкреслювання" id="underline">
+                <div>
+                    <input class="edit-button" type="text" placeholder="Колір тексту" id="color-value">
+                    <input class="edit-button" type="submit" value="Змінити колір" id="color-button">
+                </div>
+                <div>
+                    <input class="edit-button" type="text" list="reg-list" placeholder="Регістр символів" id="reg-value">
+                    <input class="edit-button" type="submit" value="Змінити регістр" id="reg-button">
+                    <datalist id="reg-list">
+                        <option>Верхній регістр</option>
+                        <option>Нижній регістр</option>
+                    </datalist>
+                </div>
         </div>
         <div>
             <form><textarea id="input_area" type="text" rows="10"></textarea></form>
