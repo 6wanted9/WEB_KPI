@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>TASK6</title>
+    </head>
+    <body onLoad="startclock();">
+        <script src="alarm_clock.js">
+        </script>
+    <center>
+    <FORM NAME="alert">
+    <TABLE bgcolor="#808080" border="2">
+    <TR><TD><font size="5" color="#FFFFFF"><b>Поточний час:</b></font> </TD><TD>
+    <font size="5" color="#FFFFFF">
+    <b><INPUT TYPE=TEXT NAME="time" VALUE="00:00 ?M" SIZE=15></b>
+    </font>
+    </TD></TR>
+    <TR><TD><font size="5" color="#FFFFFF"><b>Введення часу:&nbsp;</b></font> </TD><TD>
+    <font size="5" color="#FFFFFF">
+    <b><INPUT TYPE=TEXT NAME="set" VALUE="00:00 ?M" SIZE=15></b>
+    </font>
+    </TD></TR>
+    <TR><TD><font size="5" color="#FFFFFF"><b>Повідомлення:</b></font> </TD><TD>
+    <font size="5" color="#FFFFFF">
+    <b><INPUT TYPE=TEXT NAME="message" VALUE="None" SIZE=50></b>
+    </font>
+    </TD></TR>
+    <TR><TD>
+    <font size="5" color="#FFFFFF">
+    <b><INPUT TYPE=BUTTON STYLE="WIDTH:170" VALUE="Встановити час" ONCLICK="setalert()"></b>
+    </font>
+    </TD><TD>
+    <font size="5" color="#FFFFFF">
+    <b><INPUT TYPE=BUTTON STYLE="WIDTH:160" VALUE="Повідомлення" ONCLICK="setmess()"></b></font><font size="5" color="#FFFFFF"><b>
+    <INPUT TYPE=BUTTON STYLE="WIDTH:150" VALUE="Скинути все" ONCLICK="quit()"></b>
+    </font>
+    </TD></TR>
+    </TABLE>
+    </FORM>
+    </center>
+    </body>
+</html>
+
+ 
