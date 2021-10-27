@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JavaScript</title>
+</head>
+<body>
+<script>
+var quantity = prompt("Введіть кількість елементів масиву")
+var myarray = []; //створення і заповнення масиву
+for ( var i = 0; i < quantity; i++ ) {
+    myarray.push( Math.round( Math.random() * 100 )-50);
+} document.write( '<br>' + "Масив: "+myarray);
+
+var sumofevenindex = 0 //сума елементів з парними індексами
+for(var i=0; i <quantity; i++){
+    if(i%2==1){
+        sumofevenindex+=myarray[i]
+    }
+}
+document.write( '<br>' + "Сума елементів з парними індексами: " + sumofevenindex);
+
+
+var negatives = []//знаходження від'ємних елементів
+var numberofnegatives = 0
+for(var i=0; i <quantity; i++){
+    if(myarray[i]<0){   
+        negatives[numberofnegatives] = myarray[i]
+        numberofnegatives++        
+    }
+}
+document.write( '<br>' + "Від'ємні елементи: "+negatives); 
+
+var indexofmax=0
+var productofnegative = negatives[0]
+for(var i = 1; i < numberofnegatives; i++){//добуток від'ємних елементів
+     productofnegative*=negatives[i]
+}
+document.write( '<br>' + "Добуток всіх від'ємних чисел: " + productofnegative); 
+
+document.write('<br>' + "Найбільший елемент: "+ Math.max(...myarray))//знаходження найбільшого елемента, використання функції
+var positives = []//знаходження додатних лементів
+var numberofpositives = 0
+for(var i=0; i <quantity; i++){
+    if(myarray[i]>0){   
+        positives[numberofpositives] = myarray[i]
+        numberofpositives++        
+    }
+}
+document.write( '<br>' + "Додатні елементи: "+positives)
+for(var i = 0; i < numberofpositives; i++){
+    if(positives[i]==Math.max(...myarray)){
+        indexofmax=i+1
+        break
+    }
+}
+if(indexofmax!=0){
+document.write( '<br>' + "Індекс найбільшого елемента серед додатніх чисел: "+indexofmax)
+}
+else{
+    document.write( '<br>' + "Найбільший елемент не належить до додатніх чисел")
+}
+
+document.write('<br>' + "Найменший елемент: "+ Math.min(...myarray))//знаходження найменшого елемента, використання функції
+
+var odds = []
+var numberofodds = 0
+for(var i=0; i <quantity; i++){
+    if(i%2==0){   
+        odds[numberofodds] = myarray[i]
+        numberofodds++        
+    }
+}
+document.write( '<br>' + "Елементи з непарним індексом: "+odds)
+var indexofmin =0;
+for(var i = 0; i < numberofodds; i++){
+    if(odds[i]==Math.min(...myarray)){
+        indexofmin=i+1
+        break
+    }
+}
+if(indexofmin!=0){
+document.write( '<br>' + "Індекс найменшого елемента серед елементів з непарним індексом: "+indexofmin)
+}
+else{
+    document.write( '<br>' + "Найменший елемент має парний індекс")
+}
+
+myarray.sort(( a, b ) =>  a - b); //сортування масиву
+document.write( '<br>' + "Відсортований масив: "+myarray);
+
+
+</script>
+</body>
+</html>
