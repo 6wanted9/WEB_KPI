@@ -1,0 +1,34 @@
+<html lang="uk">
+    <head>
+        <script src="script_Task_2.js"></script>
+    </head>
+    <style>
+        #input{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+  
+    <body>
+        <p><input id="text" maxlength="25" size="40"value=""></p>
+        <FORM> 
+            <input id="input" TYPE = button VALUE = "1" onClick = "JavaScript:NumberInput('1')">
+               <input id="input" TYPE = button VALUE = "2" onClick = "JavaScript:NumberInput('2')">
+               <input id="input" TYPE = button VALUE = "3" onClick = "JavaScript:NumberInput('3')">
+               <input id="input" TYPE = button VALUE = "+" onClick = "JavaScript:funv=FunctionInput(Addition,'+')"></FORM>
+        <FORM> <input id="input" TYPE = button VALUE = "4" onClick = "JavaScript:NumberInput('4')">
+               <input id="input" TYPE = button VALUE = "5" onClick = "JavaScript:NumberInput('5')">
+               <input id="input" TYPE = button VALUE = "6" onClick = "JavaScript:NumberInput('6')">
+               <input id="input" TYPE = button VALUE = "-" onClick = "JavaScript:funv=FunctionInput(Subtraction,'-')"></FORM>
+        <FORM> <input id="input" TYPE = button VALUE = "7" onClick = "JavaScript:NumberInput('7')">
+               <input id="input" TYPE = button VALUE = "8" onClick = "JavaScript:NumberInput('8')">
+               <input id="input" TYPE = button VALUE = "9" onClick = "JavaScript:NumberInput('9')">
+               <input id="input" TYPE = button VALUE = "*" onClick = "JavaScript:funv=FunctionInput(Multiplication,'*')">
+               <input id="input" TYPE = button VALUE = "^" onClick = "JavaScript:funv=FunctionInput(Degree,'^')"></FORM>
+        <FORM><input id="input" TYPE = button VALUE = "0" onClick = "JavaScript:NumberInput('0')">
+               <input id="input" TYPE = button VALUE = "/" onClick = "JavaScript:funv=FunctionInput(Division,'/')">
+               <input id="input" TYPE = button VALUE = "%" onClick = "JavaScript:funv=FunctionInput(DivisionRemain,'%')">
+               <input id="input" TYPE = button VALUE = "sqrt" onClick = "Sqrt()">
+               <input id="input" TYPE = button VALUE = "=" onClick = "JavaScript:Execute()"> </FORM>
+    </body>
+</html>
