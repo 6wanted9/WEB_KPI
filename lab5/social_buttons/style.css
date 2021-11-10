@@ -1,0 +1,111 @@
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  button{
+    border:0;
+    outline:0;
+    height:40px;
+    width:40px;
+    border-radius:40px;
+    background-color:#ccc;
+  }
+  
+  .social{
+    display:inline-block;
+    width:700px;
+    height:40px;
+    margin-top:5px;
+    margin-left:5px;
+  }
+  
+  .maingroup{
+    position:relative;
+    display:inline-block;
+    height:40px;
+    width:180px;
+  }
+  
+  .expgroup{
+    width:300px;
+    height:40px;
+    position:absolute;
+    display:inline-block;
+  }
+  
+  .icon{
+    display:inline-block;
+    position:relative;
+    vertical-align:middle;
+  }
+  
+  .add{
+    background:transparent;
+  }
+  
+  .material-icons{
+    color:#ccc;
+    font-size:32px;
+  }
+  
+  .material-icons:hover{
+    cursor:pointer;
+    color:#a9a9a9;
+  }
+  
+  .fa{
+    color:#fff;
+    font-size:26px;
+  }
+  
+  .fa-envelope{
+    font-size:24px;
+  }
+  
+  .facebook:hover{
+    background-color:#3b5998;
+    cursor:pointer;
+  }
+  
+  .twitter:hover{
+    background-color:#55acee;
+    cursor:pointer;
+  }
+  
+  .email:hover{
+    background-color:#77797e;
+    cursor:pointer;
+  }
+  
+  .gplus:hover{
+    background-color:#dc4e41;
+    cursor:pointer;
+  }
+  
+  .linkedin:hover{
+    background-color:#0077b5;
+    cursor:pointer;
+  }
+  
+  .tumblr:hover{
+    background-color:#35465c;
+    cursor:pointer;
+  }
+  
+  .reddit:hover{
+    background-color:#ff5700;
+    cursor:pointer;
+  }
+  
+  .pocket:hover{
+    background-color:#ef4056;
+    cursor:pointer;
+  }
+  
+  .rotated{
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg);
+  }
