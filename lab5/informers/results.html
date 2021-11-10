@@ -3,12 +3,45 @@
     <head>
         <meta charset="UTF8">
         <title>Informers</title>
-
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="results_scripts.js""></script>
+        <link rel="stylesheet" href="../bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-            <header>
-
-            </header>
-
+              <h1>Інформери</h1>
+              <div>
+                <h3>Погода у Києві</h3>
+                
+              </div>
+              <!-- bigmir)net weather informer: ukraina, kiev, 120x105, blue, ua -->
+              <a href="http://weather.bigmir.net/main/kiev/8958/" target="_blank" title="Погода в Києві &#187; Україна" onclick="javascript:this.href+='?informer=1'">
+                <img src="http://bmu.img.com.ua/informer/weather/ua/120x105/blue/ukraina/kiev.png" width="120" height="105" alt="Погода Києві &#187; Україна" title="Погода Києві &#187; Україна" border="0" />
+              </a>
+              <!-- END bigmir)net weather informer -->
+              <div>
+                <h3>Курс валют</h3>
+                <!-- Minfin.com.ua currency informer 275x120 yellow-->
+              <div id="minfin-informer-m1Fn-currency">Завантажуємо 
+                <a href="https://minfin.com.ua/ua/currency/" target="_blank">курси валют</a> від minfin.com.ua</a>
+              </div><script>var iframe = '<ifra'+'me width="275" height="120" fram'+'eborder="0" src="https://informer.minfin.com.ua/ua/gen/course/?color=yellow" vspace="0" scrolling="no" hspace="0" allowtransparency="true"style="width:275px;height:120px;ove'+'rflow:hidden;"></iframe>';
+              var cl = 'minfin-informer-m1Fn-currency';document.getElementById(cl).innerHTML = iframe; 
+              </script><noscript><img src="https://informer.minfin.com.ua/gen/img.png" width="1" height="1" alt="minfin.com.ua: курси валют" title="Курс валют" border="0" /></noscript>
+              <!-- Minfin.com.ua currency informer 275x120 yellow-->
+              </div>
+              <div>
+                <h3>Годинник</h3>
+                <div class="clock" style="font-size: xx-large">
+                <div id="Date"></div><br>
+                    <span id="hours"></span>
+                    <span id="point"> : </span>
+                    <span id="min"> </span>
+                    <span id="point"> : </span>
+                    <span id="sec"> </span>
+                </div>
+                </div>
+              </div>
+            </div>
     </body>
 </html>
