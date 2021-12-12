@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>WEB</title>
+        <link rel="stylesheet" href="../bootstrap.min.css">
+        <link rel="stylesheet" href="../style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 12px sans-serif;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+            <header>
+                <h1 align="center">ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ <br> З ДИСЦИПЛІНИ "РОЗРОБЛЕННЯ WEB-ЗАСТОСУВАНЬ"</h1>
+                <h2 align="center">БРИГАДА #6 |     СТУДЕНТИ ГРУПИ ІС-01</h2>
+            </header>
+            <div align="center">
+                <a class="lab-list" href="../lab1.html">LAB1</a>
+                <a class="lab-list" href="../lab2.html">LAB2</a>
+                <a class="lab-list" href="../lab3.html">LAB3</a>
+                <a class="lab-list" href="../lab4.html">LAB4</a>
+                <a class="lab-list" href="../lab5.html">LAB5</a>
+                <a class="lab-list" href="../lab6.html">LAB6</a>
+                <a class="lab-list" href="../lab7.html">LAB7</a>
+                <a class="lab-list" href="../lab8.html" id="current-lab">LAB8</a>
+                <a class="lab-list" href="../lab9.html">LAB9</a>
+            </div>
+            <div class="main-menu" align="center">
+                <div class="left-side" align="left">
+                    <a class="task-list" href="subject.html">Тема, мета Лабораторної роботи<br>№8. Посилання на Github</a> <br>
+                    <a class="task-list" href="description.html">Опис об'єктів предметної<br>галузі, які будуть в БД</a> <br>
+                    <a class="task-list" href="infomodel.html">Інфологічна модель. Опис(пункт 4)</a> <br>
+                    <a class="task-list" href="datamodel.html">Даталогічна модель. Опис моделі<br>Зв'язки між таблицями(пункт 5)</a> <br>
+                    <a class="task-list" href="realization.html">Реалізація БД в СУБД</a> <br>
+                    <a class="task-list" href="input.html">Введення, виведення, вилучення<br>даних в БД(із БД). Пошук даних в БД</a> <br>
+                    <a class="task-list" href="sql.html" id="current-task">SQL-запити на інший функціонал<br>власного сайту. Запис у файл.</a> <br>
+                    <a class="task-list" href="authorization.html">Авторизація. Сесія(пункти 10, 11, 12)</a> <br>
+                    <a class="task-list" href="icons.html">Іконки для вибору мови. Кукі</a> <br>
+                    <a class="task-list" href="conclusion.html">Висновки</a> <br>
+
+                </div>
+                <div class="right-side">
+                    <div id="CSVTable">
+                        <script type="text/javascript"charset="utf-8">
+                            d3.text("data.csv", function(data) {
+                                var parsedCSV = d3.csv.parseRows(data);
+                
+                                var container = d3.select("body")
+                                    .append("table")
+                
+                                    .selectAll("tr")
+                                        .data(parsedCSV).enter()
+                                        .append("tr")
+                
+                                    .selectAll("td")
+                                        .data(function(d) { return d; }).enter()
+                                        .append("td")
+                                        .text(function(d) { return d; });
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>
