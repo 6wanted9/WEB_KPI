@@ -38,7 +38,45 @@
                 </div>
                 <div class="right-side">
                     <div id="info">
-                        
+                      CREATE TABLE Driver<br>
+                      (<br>
+                      ID INT PRIMARY KEY NOT NULL,<br>
+                      Driver_fio CHAR(50) NOT NULL<br>
+                      );<br>
+                      <br>
+                      CREATE TABLE Station<br>
+                      (<br>
+                      ID INT PRIMARY KEY NOT NULL,<br>
+                      Station_name CHAR(50) NOT NULL<br>
+                      );<br>
+                      <br>
+                      CREATE TABLE Town<br>
+                      (<br>
+                      ID INT PRIMARY KEY NOT NULL,<br>
+                      Towm_name CHAR(50) NOT NULL<br>
+                      );<br>
+                      <br>
+                      CREATE TABLE Bus<br>
+                      (<br>
+                      ID INT PRIMARY KEY NOT NULL,<br>
+                      Bus_name CHAR(50) NOT NULL,<br>
+                      Gos_number CHAR(20) NOT NULL,<br>
+                      Driver_id INT NOT NULL,<br>
+                      FOREIGN KEY (Driver_id)  REFERENCES Driver (ID)<br>
+                      );<br>
+                      <br>
+                      CREATE TABLE Route<br>
+                      (<br>
+                      ID INT PRIMARY KEY NOT NULL,<br>
+                      Time_in CHAR(10) NOT NULL,<br>
+                      Time_out CHAR(10) NOT NULL,<br>
+                      Bus_id INT NOT NULL,<br>
+                      Town_id INT NOT NULL,<br>
+                      Station_id INT NOT NULL,<br>
+                      FOREIGN KEY (Bus_id)  REFERENCES Bus (ID),<br>
+                      FOREIGN KEY (Town_id)  REFERENCES Town (ID),<br>
+                      FOREIGN KEY (Station_id)  REFERENCES Station (ID)<br>
+                      );
                     </div>
                 </div>
             </div>
